@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600" prefWidth="720.0" type="BorderPane"
+            style="-fx-background-image: url(https://i.imgur.com/NtO5JKM.png)" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.2"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <center>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="soloBTN" mnemonicParsing="false" prefHeight="106.0" prefWidth="350.0"
+                        style="-fx-font-family: Caveat; -fx-border-color: #000000; -fx-border-width: 5; -fx-background-color: #faf37c;
+                        -fx-background-radius: 20; -fx-border-radius: 5;" text="Solo" textAlignment="CENTER" styleClass="main-button" onAction="#onSoloButtonClick">
+                    <VBox.margin>
+                        <Insets bottom="20.0" left="400.0" top="150.0" />
+                    </VBox.margin>
+                </Button>
+                <Button fx:id="versusBTN" mnemonicParsing="false" prefHeight="106.0" prefWidth="350.0"
+                        style="-fx-font-family: Caveat;-fx-border-color: #000000; -fx-border-width: 5; -fx-background-color: #faf37c;
+                        -fx-background-radius: 20; -fx-border-radius: 5;" text="Versus" textAlignment="CENTER" styleClass="main-button" onAction="#onVersusButtonClick">
+                    <VBox.margin>
+                        <Insets bottom="20.0" left="400.0" />
+                    </VBox.margin>
+                </Button>
+                <Button fx:id="editorBTN"  mnemonicParsing="false" prefHeight="106.0" prefWidth="349.0"
+                        style="-fx-font-family: Caveat; -fx-border-color: #000000; -fx-border-width: 5; -fx-background-color: #faf37c;
+                        -fx-background-radius: 20; -fx-border-radius: 5;" text="Meine Sammlung" textAlignment="CENTER" styleClass="main-button" onAction="#onEditorButtonClick">
+                    <VBox.margin>
+                        <Insets bottom="20.0" left="400.0" />
+                    </VBox.margin>
+                </Button>
+                <Button fx:id="settingsBTN" mnemonicParsing="false" prefHeight="106.0" prefWidth="350.0"
+                        style="-fx-font-family: Caveat; -fx-border-color: #000000; -fx-border-width: 5; -fx-background-color: #faf37c;
+                        -fx-background-radius: 20; -fx-border-radius: 5;" text="Einstellungen" textAlignment="CENTER" VBox.vgrow="NEVER" styleClass="main-button" onAction="#onSettingsButtonClick">
+                    <VBox.margin>
+                        <Insets bottom="200.0" left="400.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+    </center>
+    <top>
+        <Text fill="#ee7103" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Caveat" text="Hearthstone" BorderPane.alignment="CENTER">
+            <font>
+                <Font size="120.0" />
+            </font>
+         <BorderPane.margin>
+            <Insets top="60.0" />
+         </BorderPane.margin>
+        </Text>
+    </top>
+   <right>
+        <Button fx:id="exitBTN" alignment="CENTER" mnemonicParsing="false" prefHeight="61.0" prefWidth="153.0"
+                style="-fx-font-family: Caveat; -fx-background-color: #ee7103; -fx-border-color: #ee7103; -fx-border-width: 2;"
+                stylesheets="@style.css" text="Exit" textAlignment="CENTER" BorderPane.alignment="CENTER" styleClass="main-button" onAction="#onExitButtonClick">
+            <BorderPane.margin>
+                <Insets right="215.0" top="615.0" />
+            </BorderPane.margin>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+        </Button>
+   </right>
+</fx:root>

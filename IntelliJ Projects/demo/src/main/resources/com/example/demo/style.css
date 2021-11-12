@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Caveat';
+    src: url('../CaveatRegular.ttf');
+}
+
+@font-face {
+    font-family: 'Caveat Bold';
+    src: url('../CaveatBold.ttf');
+}
+
+.main-button {
+    -fx-font-family: Caveat;
+    -fx-font-size: 45px;
+}
+
+.main-button:hover {
+    -fx-text-fill: white;
+}
+
+.radio-button {
+    -fx-font-family: Caveat;
+    -fx-font-size: 25px;
+}
+
+.setting-Text {
+    -fx-font-family: Caveat;
+    -fx-font-size: 40px;
+}
+
